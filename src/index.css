@@ -1,0 +1,390 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* app contralor */
+.kzui-app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.kzui-app-side{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+
+}
+/* topbar control */
+.kzui-topbar-container{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1a1a1a;
+  height: 32px;
+  width: 100%;
+  align-items: center;
+}
+.kzui-topbar-list{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.kzui-topbar-list li{
+  margin-left: 32px;
+  list-style: none;
+  color: white;
+}
+.kzui-topbar-list ul{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kzui-topbar-img{
+  height: 22px;
+  width: 22px;
+  margin: auto;
+}
+.kzui-topbar-right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  
+}
+
+.kzui-topbar-right span{
+  color: white;
+  margin-left: 10px;
+}
+
+
+/* sidebar control */
+.kzui-sidebar {
+  width: 200px;
+  background-color: #1e1e2d;
+  padding: 1rem;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.kzui-sidebar-item {
+  padding: 0.75rem 1rem;
+  margin: 0.25rem 0;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #b8b8c8;
+  font-weight: 500;
+}
+
+.kzui-sidebar-item:hover,
+.kzui-sidebar-item.kzui-active {
+  background-color: #2c2c3d;
+  color: #ffffff;
+}
+
+.kzui-sidebar-item.kzui-active {
+  background-color: #2c2c3d;
+  font-weight: bold;
+}
+
+.kzui-sidebar .kzui-sidebar-item {
+  margin-bottom: 0.5rem;
+}
+.kzui-sidebar-das{
+  display: flex;
+  gap: 5px;
+  justify-content: start;
+  margin-top: 16px;
+  padding: 10px;
+}
+.kzui-sidebar-das:hover{
+  transition: 0.5;
+  background-color :#2271B1;
+}
+.kzui-tc{
+  color:#58A3DF ;
+}
+.kzui-yellow{
+  color: #FDB022;
+}
+
+/* Middle control */
+
+.kzui-container {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.kzui-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.kzui-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.kzui-nav {
+  display: flex;
+  gap: 2rem;
+  padding: 20px;
+}
+
+.kzui-nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.kzui-nav-link.active {
+  border-bottom: 2px solid black;
+}
+
+.kzui-main {
+  padding: 1.5rem;
+}
+
+.kzui-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.kzui-menu {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 200px;
+}
+
+.kzui-menu-header {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.kzui-menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.kzui-menu-item {
+  margin: 0.5rem 0;
+}
+
+.kzui-menu-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.kzui-menu-link.active {
+  background-color: #f0f0f0;
+}
+
+/* dot manu */
+.kzui-dot-menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.kzui-dot-menu {
+  cursor: pointer;
+  color: #333; /* Adjust color as needed */
+}
+
+.kzui-menu-options {
+  position: absolute;
+  top: 20px; /* Adjust position as needed */
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.kzui-menu-option {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.kzui-menu-option:hover {
+  background-color: #f0f0f0;
+}
+/* color manager control */
+.kzui-color-manager {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.kzui-color-list {
+  margin-top: 20px;
+}
+
+.kzui-color-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.kzui-color-item span {
+  flex: 1; /* Adjust width of the name, value, and action sections */
+  text-align: left;
+}
+
+.kzui-color-item input[type="color"] {
+  border: none;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+  align-self: flex-end; /* Aligns color box at the bottom */
+}
+
+.kzui-add-color-section {
+  display: flex;
+  gap: 10px;
+}
+
+.kzui-add-color-section input[type="text"] {
+  padding: 5px;
+}
+
+.kzui-add-button {
+  padding: 5px 10px;
+  display: flex;
+  gap: 9px;
+  color: #74777C;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.kzui-add-button img {
+  height: 16px;
+  width: 16px;
+}
+
+.kzui-color-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+  max-width: 600px;
+}
+
+.kzui-color-header li {
+  list-style-type: none;
+  font-size: 16px;
+  text-align: center;
+  flex: 1;
+}
+
+.kzui-color-header li:nth-child(1) {
+  text-align: left;
+}
+
+.kzui-color-header li:nth-child(2) {
+  text-align: center;
+}
+
+.kzui-color-header li:nth-child(3) {
+  text-align: right;
+}
+
+
+.kzui-edit-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.kzui-save-button,
+.kzui-cancel-button {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.kzui-save-button {
+  background-color: #13191B;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.kzui-cancel-button {
+  
+  color: #13191B;
+}
+.kzui-color-pic{
+  display: flex;
+  gap: 5px;
+}
+.kzui-color-value{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.kzui-color-value .kzui-color{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.kzui-color input{
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: none;
+}
+.kzui-color-btn{
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.kzui-name-input{
+  padding: 8px 10px;
+font-family: Roboto;
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
